@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Static Content -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?1.2">
+    <link rel="stylesheet" type="text/css" href="{%  static 'css/slider.css' %}?1">
+    <!-- End Static Content -->
+    <!-- FontAwesome script -->
+    <script src="https://kit.fontawesome.com/32ec682ca2.js" crossorigin="anonymous"></script>
+    <!-- End FontAwesome script -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <!-- End Google Fonts -->
+    <title>Portafolio de YSCT</title>
+</head>
+<body>
+    <header id="menu_nav">
+        <div id="logotipo">
+            <a href="{% url 'MainIndex' %}">YSCT <i class="fas fa-laptop-code"></i></a>
+        </div>
+        <nav class="col-4">
+            <a href="{% url 'MainIndex' %}" ><span>Inicio</span></a>
+            <a><span>Proyectos</span></a>
+            <a><span>Sobre Mí</span></a>
+            <a><span>Contacto</span></a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div id="footermenu" class="col-2">
+            <div id="social_link" class="col-5">
+                <a href="https://www.facebook.com/yared.chavezdeltoro/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/YaredDelToro"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/yaredsct/"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/in/yared-del-toro-41627a1b0/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/YSCT01"><i class="fab fa-github-square"></i></a>
+            </div>
+            <div id="footer_link">
+                 <nav class="col-4">
+                    <a href="{% url 'MainIndex' %}">Inicio</a>
+                    <a>Proyectos</a>
+                    <a>Sobre Mí</a>
+                    <a>Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <p id="footercopy">Portafolio YSCT &COPY; 2021</p>
+    </footer>
+<!-- Script -->
+<script rel="script" src="{% static 'javascript/stickyheader.js' %}"></script>
+<script rel="script" src="{% static 'javascript/slider.js' %}"></script>
+<!-- End Script -->
+</body>
+</html>
