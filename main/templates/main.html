@@ -4,7 +4,10 @@
     <section id="main-bg">
             <h1>Portafolio <br> Yared Del Toro</h1>
     </section>
+    <hr>
+    <h1 style="font-size: 3em">Sobre Mí</h1>
     <section id="main-introduction" class="col-2">
+
         <div class="col-1">
             <img src="../static/img/Y2.jpeg">
         </div>
@@ -17,6 +20,7 @@
     <hr>
     <section id="main-proyectos">
         <!-- Slideshow container -->
+        <h1>Servicios</h1>
         <div class="slideshow-container">
 
           <!-- Full-width images with number and caption text -->
@@ -52,4 +56,21 @@
         </div>
     </section>
     <hr>
+    <section id="main-contacto">
+        <h1 style="font-size: 3em">¿Deseas saber más?</h1>
+        <div class="col-2">
+            <div class="col-1">
+                <h2>Conoce mis proyectos</h2>
+                <p>Descubre mis proyectos que he realizado.</p>
+                <img src="{% static 'img/main-proyectos.jpg' %}">
+                <a class="button">Proyectos</a>
+            </div>
+            <div class="col-1">
+                <h2>Ponte en contacto</h2>
+                <p>Mándame un mensaje y nos pondremos en contacto.</p>
+                <img src="{% static 'img/main-contacto.jpg' %}">
+                <a class="button">Contactar</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}
