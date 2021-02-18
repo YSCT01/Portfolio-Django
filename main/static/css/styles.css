@@ -82,12 +82,40 @@ section {
     border: 1px solid #32e0c4;
     color: #32e0c4;
     transition: 400ms;
+    background: transparent;
 }
 
 .button:hover{
     color:white;
     background: #32e0c4;
     transform: scale(1.2,1.2);
+}
+
+.textoForm{
+     background-color: transparent;
+    border:none;
+    border-bottom:2px solid #0d7377;
+    color:#0d7377;
+    transition: 400ms;
+    font-size: 1.2em;
+    height: fit-content;
+    padding: 5px;
+}
+
+.textoForm:focus, .textareaForm:focus{
+    transform: scale(1.05,1.05);
+}
+
+.textareaForm{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #0d7377;
+    color: #0d7377;
+    transition: 400ms;
+    font-size: 1.2em;
+    height: 150px;
+    padding: 5px;
+    resize: none;
 }
 
 .col-1{
@@ -306,3 +334,49 @@ footer{
 }
 
 /*==========End Main Page==========*/
+
+
+/*==========Contacto Page==========*/
+#contacto_p{
+
+}
+
+#contacto_p h1{
+    font-size: 2.6em;
+}
+
+#contacto_p div > div{
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+#contacto_p div > div img{
+    width: 90%;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+#contacto_p div > div p{
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+#contacto_p  form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+}
+
+
+#contacto_p form label{
+    color:white;
+    margin: auto;
+}
+
+
+/*==========End Contacto Page==========*/

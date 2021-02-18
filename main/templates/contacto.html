@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% for message in messages %}
+    <script>
+        alert('{{ message }}');
+    </script>
+{% endfor %}
+<section id="contacto_p">
+    <h1>Contacto</h1>
+    <hr style="margin-bottom: 15px">
+    <div class="col-2">
+        <div class="col-1">
+            <img src="{% static 'img/contactoform.jpg' %}">
+            <p>¿Tienes dudas sobre algún servicio? ¿Deseas ponerte en contacto o preguntarme algo? Llena el formulario y me comunicaré en breve.</p>
+        </div>
+        <div class="col-1">
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" class="button" value="Mandar mensaje">
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
