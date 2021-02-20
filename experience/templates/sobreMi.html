@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<section id="sobreMi-p" >
+    <h1 class="titulo-pagina">Sobre Mi</h1>
+    <hr>
+    <div id="quiensoy" class="col-2 divSobreMi">
+        <div class="col-2">
+            <p>
+                Soy un joven tapatío estudiante de la carrera de desarrollo de software, amante de la tecnología y la programación.
+                Me encanta crecer como persona estudiando y aprendiendo cosas nuevas cada día.
+                Siempre actualizado con las últimas novedades del mundo tecnológico.
+                Actualmente 'Desarrollador Web Jr'.
+            </p>
+            <img src="{% static 'img/Y1.jpg' %}">
+        </div>
+    </div>
+
+    <div id="pasiones" class="col-2 divSobreMi">
+        <div class="col-2">
+            <img src="{% static 'img/sobrem2.jpg' %}" width="95%">
+            <p>
+                Me encanta trabajar con valores. Responsabilidad, orden, puntualidad son principales características.
+                Buscar la lógica y encontrar las mejores soluciones a los problemas que se puedan presentar.
+                Siempre me enfoco en realizar trabajos profesionales y de calidad, dando siempre lo mejor y buscando
+                las tecnologías más innovadoras.
+            </p>
+        </div>
+    </div>
+
+    <div id="exp_cono" class="col-1">
+        <div class="col-2" id="tabsexp">
+            <span id="conotab" class="active" onclick="changeTab(conocont, expcont, tabcono, tabexp)">Tecnologías</span>
+            <span id="exptab" onclick="changeTab(expcont, conocont, tabexp, tabcono);">Experiencia</span>
+        </div>
+        <div id="conoinfo">
+            <div  class="col-4">
+                {% for tecnologia in tecnologias %}
+                    <div class="col-1">
+                        <p>{{ tecnologia.lenguaje }}</p>
+                        <div class="col-2" style="grid-template-columns: 80% 10%;">
+                            <div style="width: {{ tecnologia.habilidad }}%; background: #32e0c4; height: 20px;"></div>
+                            <span style="margin: auto">{{ tecnologia.habilidad }}%</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="expinfo">
+            <div  class="col-4">
+                {% for experiencia in experiencias %}
+                    <div>
+                    <p>{{ experiencia.empresa }}</p>
+                    <p style="color:#0d7377">{{ experiencia.tiempo }} meses</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

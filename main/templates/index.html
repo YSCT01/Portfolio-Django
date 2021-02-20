@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- Static Content -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?1.5">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?1.99">
     <link rel="stylesheet" type="text/css" href="{%  static 'css/slider.css' %}?1">
     <!-- End Static Content -->
     <!-- FontAwesome script -->
@@ -25,7 +25,7 @@
         <nav class="col-4">
             <a href="{% url 'MainIndex' %}" ><span>Inicio</span></a>
             <a><span>Proyectos</span></a>
-            <a><span>Sobre Mí</span></a>
+            <a href="{% url 'SobreMi' %}" ><span>Sobre Mí</span></a>
             <a href="{% url 'MainContacto' %}"><span>Contacto</span></a>
         </nav>
     </header>
@@ -46,8 +46,8 @@
                  <nav class="col-4">
                     <a href="{% url 'MainIndex' %}">Inicio</a>
                     <a>Proyectos</a>
-                    <a>Sobre Mí</a>
-                    <a>Contacto</a>
+                    <a href="{% url 'SobreMi' %}">Sobre Mí</a>
+                    <a href="{% url 'MainContacto' %}">Contacto</a>
                 </nav>
             </div>
         </div>
@@ -56,6 +56,7 @@
 <!-- Script -->
 <script rel="script" src="{% static 'javascript/stickyheader.js' %}"></script>
 <script rel="script" src="{% static 'javascript/slider.js' %}"></script>
+<script rel="script" src="{% static 'javascript/sobreTabs.js' %}"></script>
 <!-- End Script -->
 </body>
 </html>

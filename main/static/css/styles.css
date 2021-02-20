@@ -118,6 +118,10 @@ section {
     resize: none;
 }
 
+.titulo-pagina{
+    font-size: 2.6em;
+}
+
 .col-1{
     height: auto;
     width: 100%;
@@ -341,10 +345,6 @@ footer{
 
 }
 
-#contacto_p h1{
-    font-size: 2.6em;
-}
-
 #contacto_p div > div{
     background-color: black;
     width: 90%;
@@ -380,3 +380,90 @@ footer{
 
 
 /*==========End Contacto Page==========*/
+
+/*==========Sobre Mi Page==========*/
+#sobreMi-p{}
+
+.divSobreMi{
+    padding: 25px 0px;
+}
+
+.divSobreMi div{
+     width: 95%;
+    margin: auto 0;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+
+.divSobreMi div p{
+    font-size: 1.8em;
+    line-height: 35px;
+    margin: auto;
+}
+
+.divSobreMi  div img{
+    height: 250px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#sobreMi-p #quiensoy{
+    grid-template-columns: 10% 90%
+}
+
+#sobreMi-p #quiensoy div{
+    grid-column-start: 2;
+    margin-right:50px;
+    grid-template-columns: 80% 10%;
+}
+
+#sobreMi-p #pasiones{
+    grid-template-columns: 90% 10%;
+}
+
+#sobreMi-p #pasiones div{
+    margin-left: 50px;
+    grid-template-columns: 10% 80%;
+}
+
+#exp_cono{
+    width: 95%;
+    margin: auto;
+    background: black;
+    padding: 20px;
+}
+
+#exp_cono span{
+    text-align: center;
+}
+
+#exp_cono #tabsexp{
+    width: 100%;
+    border:1px solid #0d7377;
+    margin-bottom: 20px;
+    padding: 5px;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+
+#exp_cono #tabsexp span{
+    color:#0d7377;
+    transition: 400ms;
+}
+
+#exp_cono #tabsexp span:not(.active):hover,
+#exp_cono #tabsexp span.active{
+    background: #32e0c4;
+    color:white;
+}
+
+.hidentab{
+    display: none;
+}
+
+#conoinfo, #expinfo{
+    min-height: 250px;
+}
+/*==========End Sobre Mi==========*/
