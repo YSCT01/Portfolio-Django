@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Static Content -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?1.99">
-    <link rel="stylesheet" type="text/css" href="{%  static 'css/slider.css' %}?1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?2.4">
+    <link rel="stylesheet" type="text/css" href="{%  static 'css/slider.css' %}?1.1">
     <!-- End Static Content -->
     <!-- FontAwesome script -->
     <script src="https://kit.fontawesome.com/32ec682ca2.js" crossorigin="anonymous"></script>
@@ -24,7 +25,7 @@
         </div>
         <nav class="col-4">
             <a href="{% url 'MainIndex' %}" ><span>Inicio</span></a>
-            <a><span>Proyectos</span></a>
+            <a href="{% url 'Proyectos' %}"><span>Proyectos</span></a>
             <a href="{% url 'SobreMi' %}" ><span>Sobre Mí</span></a>
             <a href="{% url 'MainContacto' %}"><span>Contacto</span></a>
         </nav>
@@ -45,7 +46,7 @@
             <div id="footer_link">
                  <nav class="col-4">
                     <a href="{% url 'MainIndex' %}">Inicio</a>
-                    <a>Proyectos</a>
+                    <a  href="{% url 'Proyectos' %}">Proyectos</a>
                     <a href="{% url 'SobreMi' %}">Sobre Mí</a>
                     <a href="{% url 'MainContacto' %}">Contacto</a>
                 </nav>

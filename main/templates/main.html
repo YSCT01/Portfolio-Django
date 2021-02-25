@@ -11,8 +11,9 @@
         <div class="col-1">
             <img src="../static/img/Y2.jpeg">
         </div>
-        <div class="col-1" style="grid-template-rows: 80% 20%">
+        <div class="col-1 row-2" style="grid-template-rows: 80% 20%">
             <p>Estudiante de la carrera de ingeniería de Desarrollo de Software. Actualmente me desempeño como programador web fullstack.
+            <i class="fas fa-laptop-code"></i>
             </p>
             <a class="button" href="{% url 'SobreMi' %}">Conocer Más</a>
         </div>
@@ -60,16 +61,16 @@
         <h1 style="font-size: 3em">¿Deseas saber más?</h1>
         <div class="col-2">
             <div class="col-1">
-                <h2>Conoce mis proyectos</h2>
+                <h2>Conoce mis proyectos <i class="fas fa-tasks"></i></h2>
                 <p>Descubre mis proyectos que he realizado.</p>
                 <img src="{% static 'img/main-proyectos.jpg' %}">
-                <a class="button">Proyectos</a>
+                <a class="button" href="{% url 'Proyectos' %}">Proyectos</a>
             </div>
             <div class="col-1">
-                <h2>Ponte en contacto</h2>
+                <h2>Ponte en contacto <i class="far fa-envelope-open"></i></h2>
                 <p>Mándame un mensaje y nos pondremos en contacto.</p>
                 <img src="{% static 'img/main-contacto.jpg' %}">
-                <a href="{% url 'MainContacto' %}" class="button">Contactar</a>
+                <a href="{% url 'MainContacto' %}" class="button">Contactar </a>
             </div>
         </div>
     </section>

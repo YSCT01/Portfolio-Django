@@ -54,6 +54,11 @@ a,li, a > i{
     margin: auto;
 }
 
+i{
+    color:#0d7377;
+    margin: auto;
+}
+
 a:hover,li:hover, a:hover > i{
     transform: scale(1.1,1.1);
     color:#32e0c4;
@@ -70,7 +75,6 @@ hr{
 
 section {
     min-height: 60vh;
-    padding: 15px 0;
 }
 
 .button{
@@ -120,6 +124,8 @@ section {
 
 .titulo-pagina{
     font-size: 2.6em;
+    background: #0d7377;
+    color:white;
 }
 
 .col-1{
@@ -261,6 +267,7 @@ footer{
     background: black;
     display: grid;
     padding: 20px 0;
+    margin-top: 25px;
 }
 
 #footermenu{
@@ -467,3 +474,153 @@ footer{
     min-height: 250px;
 }
 /*==========End Sobre Mi==========*/
+
+/*========== Proyectos ==========*/
+#proyectocont{
+    background: black;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 15px;
+    min-height: 75vh;
+}
+
+.tarjetaproy{
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    width: 95%;
+    box-shadow: 1px 1px 3px #333;
+}
+
+.tarjetaproy img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-top-left-radius:7px ;
+    border-top-right-radius: 7px;
+}
+
+.tarjetaproy > span{
+    background: #0d7377;
+    border-radius: 7px;
+    transition: 400ms;
+}
+
+.tarjetaproy:hover >span{
+    background: #32e0c4;
+}
+
+.tarjetaproy span h2{
+    margin: auto;
+    font-size: 1em;
+    color:white;
+    width: 98%;
+}
+.tarjetaproy span span{
+    border-top: 2px solid black;
+}
+
+
+
+
+/*==========End Proyectos==========*/
+
+/*==========Proyecto==========*/
+#proyectoindiv #tarjetaproy{
+    margin: auto;
+    background: black;
+    width: 95%;
+    min-height: 70vh;
+    margin-top: 25px;
+    padding: 15px 10px;
+}
+
+#proyectoindiv img{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+#proyano {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#proydesc, #proytec{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+#proyectoindiv #textoproy span{
+    display: block;
+    text-align: center;
+    background: #32e0c4;
+    color:white;
+    padding: 4px;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+
+/*==========End Proyecto==========*/
+
+/*======================Responsivo==========================*/
+/*Tablet*/
+ @media (max-width: 920px) {
+     a, span, p{
+         font-size: 1em;
+     }
+
+     h1{
+         font-size: 1.7em;
+     }
+
+     h2{
+         font-size: 1.5em;
+     }
+
+     h3{
+         font-size: 1.3em;
+     }
+
+     main{
+         min-height: 78vh;
+     }
+
+     #menu_nav{
+         width: 100%;
+         grid-template-columns: 30% 50%;
+     }
+
+     #main-bg{
+         height: 45vh;
+     }
+
+      section{
+          min-height: 40vh;
+      }
+
+     #footermenu{
+         grid-template-columns: 45% 45%;
+     }
+
+     #main-introduction div.row-2{
+         grid-template-rows: auto auto;
+     }
+
+     #main-introduction div.row-2 p{
+        margin: 20px 0;
+         font-size: 1.6em;
+     }
+
+     #main-introduction div.row-2 a{
+         margin: 15px auto;
+     }
+
+     #main-contacto h2{
+         font-size: 1.5em;
+     }
+ }
+
+

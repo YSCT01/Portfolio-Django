@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<section id="proyectoindiv" class="col-1">
+    <h1 class="titulo-pagina">{{ proyecto.proyecto }}</h1>
+    <hr>
+
+    <div class="col-2" id="tarjetaproy">
+        <div class="col-1">
+            <img src="{{ proyecto.imagen.url }}">
+        </div>
+        <div class="col-1" id="textoproy">
+            <p id="proyano"><span>Año</span><br> {{ proyecto.ano }}</p>
+            <p id="proydesc"><span>Descripción</span><br> {{ proyecto.descripcion }}</p>
+            <p id="proytec"><span>Tecnologías</span> <br> {{ proyecto.tecnologias }}</p>
+            <a class="button" href="{{ proyecto.url }}">Visitar Sitio</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

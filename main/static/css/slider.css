@@ -106,3 +106,13 @@
   margin: auto;
   width: auto!important;
 }
+
+/*Responsivo*/
+@media (max-width: 920px){
+    .prev{
+      left: 0;
+    }
+    .next{
+      right: 0;
+    }
+}

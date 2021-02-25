@@ -132,6 +132,6 @@ EMAIL_HOST_USER = 'formyaredblog@gmail.com'
 EMAIL_HOST_PASSWORD = 'formsportfolio'
 EMAIL_PORT = '587'
 
-#Configuración para media
+#Configuración para media e imágenes
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <section id="proyectossec">
+    <h1 class="titulo-pagina">Proyectos</h1>
+    <hr>
+    <div id="proyectocont" class="col-3" style="grid-template-columns: 30% 30% 30%;justify-content: space-evenly">
+        {% for proyecto in proyectos %}
+        <a class="tarjetaproy col-1" href="{% url 'Proyecto' proyecto.id %}" >
+            <span class="row-2" style="display: grid;width: 100%; min-height:300px; grid-template-rows: 80% 20%">
+                <img src="{{ proyecto.imagen.url }}">
+                <span class="col-1">
+                    <h2>{{ proyecto.proyecto }}</h2>
+
+                </span>
+            </span>
+        </a>
+        {% endfor %}
+    </div>
+    </section>
+{% endblock %}
