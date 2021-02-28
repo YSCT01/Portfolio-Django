@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Static Content -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?2.4">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?2.8">
     <link rel="stylesheet" type="text/css" href="{%  static 'css/slider.css' %}?1.1">
     <!-- End Static Content -->
     <!-- FontAwesome script -->
@@ -23,12 +23,13 @@
         <div id="logotipo">
             <a href="{% url 'MainIndex' %}">YSCT <i class="fas fa-laptop-code"></i></a>
         </div>
-        <nav class="col-4">
+        <nav class="col-4" id="navcompleto">
             <a href="{% url 'MainIndex' %}" ><span>Inicio</span></a>
             <a href="{% url 'Proyectos' %}"><span>Proyectos</span></a>
             <a href="{% url 'SobreMi' %}" ><span>Sobre Mí</span></a>
             <a href="{% url 'MainContacto' %}"><span>Contacto</span></a>
         </nav>
+        <span style="display: none" id="menumob"><i class="fas fa-bars"></i></span>
     </header>
     <main>
         {% block content %}
@@ -54,10 +55,25 @@
         </div>
         <p id="footercopy">Portafolio YSCT &COPY; 2021</p>
     </footer>
+    <div id="menumobil">
+        <div id="listamobil">
+            <div id="logomobil" class="col-2" style="grid-template-columns: 25% 75%"><i class="fas fa-times" id="closemenu"></i><h2>YSCT</h2></div>
+            <div id="linkmobil">
+                <a href="{% url 'MainIndex' %}" >Inicio</a>
+                <a href="{% url 'Proyectos' %}">Proyectos</a>
+                <a href="{% url 'SobreMi' %}">Sobre Mi</a>
+                <a href="{% url 'MainContacto' %}">Contacto</a>
+            </div>
+            <div id="copymobil">
+                <h3>YSCT &COPY; 2021</h3>
+            </div>
+        </div>
+    </div>
 <!-- Script -->
 <script rel="script" src="{% static 'javascript/stickyheader.js' %}"></script>
 <script rel="script" src="{% static 'javascript/slider.js' %}"></script>
 <script rel="script" src="{% static 'javascript/sobreTabs.js' %}"></script>
+<script rel="script" src="{% static 'javascript/menumobile.js' %}?1"></script>
 <!-- End Script -->
 </body>
 </html>
