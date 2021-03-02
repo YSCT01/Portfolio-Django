@@ -746,6 +746,11 @@ footer{
 
 }
 
+#menumobil{
+    display: none;
+}
+
+
 /*Menu mobile*/
 @media (max-width: 526px) {
     #menumobil{
