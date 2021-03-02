@@ -130,7 +130,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'formyaredblog@gmail.com'
-EMAIL_HOST_PASSWORD = 'formsportfolio'
+EMAIL_HOST_PASSWORD = 'YSCT060201'
 EMAIL_PORT = '587'
 
 #Configuración para media e imágenes
@@ -155,4 +155,4 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'portafolio-ysct.herokuapp.com']
+ALLOWED_HOSTS = ['*']
