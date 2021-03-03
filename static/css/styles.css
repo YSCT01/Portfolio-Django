@@ -18,6 +18,10 @@
 /* #0d7377 : Verde Oscuro */
 /* #32e0c4 : Verde Agua */
 /* #EEEEEE : Gris/Blanco */
+body *{
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
 
 h1,h2,h3,h4{
     font-family: 'Source Code Pro', monospace;
@@ -252,7 +256,7 @@ header #logotipo a:hover i{
 }
 
 .sticky-header{
-    position: sticky;
+    position: fixed;
     top:0;
     left: 0;
     z-index: 99999;
