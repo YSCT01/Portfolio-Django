@@ -757,6 +757,11 @@ footer{
 
 /*Menu mobile*/
 @media (max-width: 526px) {
+
+    .sticky-header{
+        position: initial;
+    }
+
     #menumobil{
         display: none;
         width: 100vw;
