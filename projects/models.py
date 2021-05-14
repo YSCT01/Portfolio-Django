@@ -8,6 +8,7 @@ class Proyecto(models.Model):
     tecnologias = models.CharField(max_length=255, null=False)
     ano = models.IntegerField(null=False)
     imagen = models.ImageField(default='null', upload_to='Proyectos')
+    urlimg = models.CharField(max_lenght=255, null=False)
 
     class Meta:
         verbose_name="Proyecto"
