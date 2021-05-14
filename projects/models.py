@@ -5,10 +5,11 @@ class Proyecto(models.Model):
     proyecto = models.CharField(max_length=255, null=False)
     descripcion = models.CharField(max_length=255, null=False)
     url = models.CharField(max_length=255, null=False)
+    urlimg = models.CharField(max_length=255, null=False, default="null")
     tecnologias = models.CharField(max_length=255, null=False)
     ano = models.IntegerField(null=False)
     imagen = models.ImageField(default='null', upload_to='Proyectos')
-    urlimg = models.CharField(max_length=255, null=False, default="null")
+
 
     class Meta:
         verbose_name="Proyecto"
